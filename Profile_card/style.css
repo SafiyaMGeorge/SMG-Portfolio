@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/*custom properties*/
+:root{
+    /*color*/
+--clr-acent:hsl(185, 75%, 39%);
+--clr-dark: hsl(229, 23%, 23%);
+--clr-grey:hsl(227, 10%, 46%);
+--clr-neutral:hsl(0, 0%, 59%);
+
+/*font-family: */
+--ff-primary:font-family: 'Kumbh Sans', sans-serif;
+
+/*font size*/
+--fw-reg:400;
+--fw-bold:700;
+
+--fs-reg:18px;
+--fs-sm:15px;
+}
+body{
+    background-color: var(--clr-acent);
+    font-size: var(--fs-reg);
+}
+.card{
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    width: 65vw;
+}
+.pattern{
+   width: 65vw;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+.userImage{
+    border-radius: 50%;
+    box-sizing: content-box;
+    transform: translateY(-45%);
+}
+.user{
+    border-radius: 50%;
+}
+.about{
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-bottom: solid .025rem var(--clr-neutral);
+}
+.userInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem;
+}
+h1,h2{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-reg);
+}
+p{
+    color: var(--clr-grey);
+    font-size: var(--fs-sm);
+}
+@media (min-width:650px){
+    .card{
+        width: 30rem;
+    }
+    .pattern{
+        width: 30rem;
+    }
+}
