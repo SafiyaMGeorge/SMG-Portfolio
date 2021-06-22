@@ -2,34 +2,43 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width intial-scale=1">
-        <title>Stats Preview</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <!-- CSS only -->
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Price component</title>
     </head>
     <body>
-        <div class="card">
-            <section class="hero"></section>
-            <section class="content">
-                <h1 class="heading">Get <span class="insights">insights</span> that help you business grow.</h1>
-                <section class="pitch">
-                    <p>Discover the benefits of data analytics and make better decisions regarding revenue. customer experience, and overall efficenty</p>
-                </section>
-                <section class="stats">
-                    <div id="companies">
-                        <h2>10k+</h2>
-                        <h3>Companies</h3>
+        <div class="container">
+            <section class="pitch">
+                    <h1>Join our community</h1>
+                    <h2>30-day, hassle-free money back gaurantee</h2>
+                    <div>
+                        <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+                        <p>Perfect for any developers who are serious about honing their skills.</p>
                     </div>
-                    <div id="templates">
-                        <h2>314</h2>
-                        <h3>Templates</h3>
+            </section>
+            <section class="price">
+                    <h1 class="price__heading">Monthly Subcription</h1>
+                    <div>
+                        <span>
+                            <p class="perMonth">$29</p><span class="monthly">per month</span>
+                        </span>
+                        <p>Full access for less than $1 a day</p>
                     </div>
-                    <div id="queries">
-                        <h2>12M+</h2>
-                        <h3>Queries</h3>
-                    </div>
-                </section>
+                    <button type="button" class="btn btn-secondary btn-lg-block">Sign Up</button>
+            </section>
+            <section class="why">
+                    <h1>Why Us</h1>
+                    <ul>
+                        <li>Tutorial by insdusty expers</li>
+                        <li>Peer & expert code reviews</li>
+                        <li>Access to our GitHub repos</li>
+                        <li>Community Forum</li>
+                        <li>Flashcard decks</li>
+                        <li>New videos every week</li>
+                    </ul>
             </section>
         </div>
     </body>
